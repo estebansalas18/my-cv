@@ -13,8 +13,13 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        customPurple: '#6a0dad',
+        customPurpleLight: '#8124c4',
+      },
     },
   },
   plugins: [],
 }
 export default config
+
