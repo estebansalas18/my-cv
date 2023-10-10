@@ -141,6 +141,13 @@ const Home = () => {
         url: "https://github.com/estebansalas18/Domino-lab1",
       },
       {
+        image: "./images/cv.png",
+        title: "Hoja de Vida",
+        description:
+          "Esta hoja de vida ha sido desarrollada con tecnologías como React, Next.js y Tailwind CSS como parte del proyecto de Ingeniería Web. Representa mi primera experiencia en el desarrollo Frontend.",
+        url: "https://my-cv-one.vercel.app/",
+      },
+      {
         image: "./images/empresarial.jpg",
         title: "Uber - CodeF@ctory2023",
         description:
