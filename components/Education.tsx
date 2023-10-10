@@ -10,14 +10,14 @@ interface EducationProps {
   description: string;
 }
 
-const Education: React.FC<EducationProps> = ({
+const Education = ({
   institution,
   role,
   startDate,
   endDate,
   certificationTitle,
   description,
-}) => {
+}: EducationProps) => {
   let date = startDate + " - " + endDate;
   return (
     <div className="flex mb-8 bg-white rounded-lg shadow-lg py-5 hover:scale-105 transition-transform duration-300 ease-in-out">
