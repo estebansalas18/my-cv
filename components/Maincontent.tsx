@@ -59,7 +59,7 @@ const MainContent = ({
           <p className="text-lg mt-6 mr-80 text-gray-600">
             {profileDescription}
           </p>
-          <Button label="Contactar" />
+          <Button label="Contratar" />
         </div>
         <div className="w-1/4 mt-20 mr-12">
           <img
