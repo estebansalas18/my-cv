@@ -1,10 +1,4 @@
-import {
-  Dialog,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  Slide,
-} from "@mui/material";
+import { Dialog, DialogContent, DialogTitle, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import { Dispatch, SetStateAction, forwardRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";

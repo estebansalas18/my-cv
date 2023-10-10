@@ -138,7 +138,7 @@ const Home = () => {
         image: "./images/domino.jpg",
         title: "Domino",
         description: "Juego de domino desarrollado en C#",
-        url: "https://github.com/estebansalas18",
+        url: "https://github.com/estebansalas18/Domino-lab1",
       },
       {
         image: "./images/empresarial.jpg",
