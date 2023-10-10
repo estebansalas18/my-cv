@@ -31,7 +31,7 @@ const ContactMeDialog = ({
         }
       }}
     >
-      <DialogTitle className="font-bold text-5xl text-center">
+      <DialogTitle className="text-center font-bold text-5xl">
         ¿En serio me quieres contactar?
       </DialogTitle>
       <DialogContent>
