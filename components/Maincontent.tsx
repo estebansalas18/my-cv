@@ -8,7 +8,9 @@ interface MainContentProps {
   name: string;
   role: string;
   profileDescription: string;
+  knowledgeDescription: string;
   knowledge: { icon: React.ElementType; title: string; description: string }[];
+  educationDescription: string;
   educationInfo: {
     institution: string;
     role: string;
@@ -17,6 +19,7 @@ interface MainContentProps {
     certificationTitle: string;
     description: string;
   }[];
+  projectsDescription: string;
   projects: {
     title: string;
     description: string;
@@ -29,8 +32,11 @@ const MainContent: React.FC<MainContentProps> = ({
   name,
   role,
   profileDescription,
+  knowledgeDescription,
   knowledge,
+  educationDescription,
   educationInfo,
+  projectsDescription,
   projects,
 }) => {
   const chunkArray = (array: any[], chunkSize: number) => {
@@ -54,7 +60,7 @@ const MainContent: React.FC<MainContentProps> = ({
           </p>
           <Button label="Contactar" />
         </div>
-        <div className="w-1/4 mt-12 mr-12">
+        <div className="w-1/4 mt-20 mr-12">
           <img
             src="./images/my-photo-full.jpg"
             alt="Mi Foto"
@@ -65,11 +71,7 @@ const MainContent: React.FC<MainContentProps> = ({
       <div className="text-center mt-10">
         <h2 className="text-4xl font-bold">Mis Conocimientos</h2>
         <p className="text-lg mt-3 mb-10 ml-40 mr-40 text-gray-600 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-          volutpat feugiat placerat lobortis. Natoque rutrum semper sed
-          suspendisse nunc lectus.
+          {knowledgeDescription}
         </p>
       </div>
       {KnowledgeGroups.map((group, groupIndex) => (
@@ -88,11 +90,7 @@ const MainContent: React.FC<MainContentProps> = ({
       <div className="text-center mt-10">
         <h2 className="text-4xl font-bold">Educación</h2>
         <p className="text-lg mt-3 mb-10 ml-40 mr-40 text-gray-600 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-          volutpat feugiat placerat lobortis. Natoque rutrum semper sed
-          suspendisse nunc lectus.
+          {educationDescription}
         </p>
       </div>
       <div className="education-container mt-8">
@@ -103,11 +101,7 @@ const MainContent: React.FC<MainContentProps> = ({
       <div className="text-center mt-10">
         <h2 className="text-4xl font-bold">Portafolio</h2>
         <p className="text-lg mt-3 mb-10 ml-40 mr-40 text-gray-600 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
-          feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
-          lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-          volutpat feugiat placerat lobortis. Natoque rutrum semper sed
-          suspendisse nunc lectus.
+          {projectsDescription}
         </p>
       </div>
       <div className="w-[1170px] mt-10 mx-auto">
@@ -124,6 +118,9 @@ const MainContent: React.FC<MainContentProps> = ({
             ))}
           </div>
         </div>
+      </div>
+      <div className="bg-white text-gray-600 mb-5 mt-12 text-center">
+        <p>&copy; 2023 Esteban Salas. Todos los derechos reservados.</p>
       </div>
     </div>
   );

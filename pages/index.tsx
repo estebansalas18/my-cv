@@ -24,7 +24,7 @@ const Home: React.FC = () => {
     email: "JuanesSalas18@gmail.com",
     nationality: "Colombiano",
     profileDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.",
+      "Arquitecto Nube en Bancolombia, enfocado en la nube de AWS. Gran capacidad de trabajo de equipo y plenos conocimientos en Frontend. Con intereses en el desarrollo Web y Móvil.",
     languages: [
       { label: "Español", level: 100 },
       { label: "Inglés", level: 80 },
@@ -57,7 +57,8 @@ const Home: React.FC = () => {
       },
       { url: "https://github.com/estebansalas18", icon: FaGithub },
     ],
-    knowledgeDescription: "",
+    knowledgeDescription:
+      "Mis conocimientos se resumen en fundamentos básicos de Cloud Computing, enfocado en la nube de AWS y adquiriendo nuevos conocimientos de Azure y GCP, también he trabajado con metodologías agiles como Scrum y habilidades escenciales en Git y Github.",
     knowledge: [
       {
         icon: FaAws,
@@ -92,7 +93,8 @@ const Home: React.FC = () => {
         description: "Scrum y Kanban para la gestión de proyectos",
       },
     ],
-    educationDescription: "",
+    educationDescription:
+      "Mi educación se comprende en cursos de fundamentos de programación con enfasis en el desarrollo de aplicaciones móviles y web, también he adquirido conocimientos en la nube de AWS y completado la primera certificación y actualmente me encuentro terminando mi pregrado en Ingeniería de Sistemas.",
     educationInfo: [
       {
         institution: "Universidad de Antioquia",
@@ -122,7 +124,8 @@ const Home: React.FC = () => {
           "El título de Bachiller Académico certifica la finalización de la educación secundaria y la competencia en diversas materias académicas, preparando a los estudiantes para la educación superior o el empleo.",
       },
     ],
-    projectsDescription: "",
+    projectsDescription:
+      "Mi portafolio cuenta con todos los proyectos que he realizado a traves de mi vida Universitaria, en los cuales he adquirido conocimientos en diferentes lenguajes de programación y metodologías de desarrollo.",
     projects: [
       {
         image: "./images/ahorrapp.jpg",

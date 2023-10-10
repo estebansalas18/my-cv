@@ -8,7 +8,7 @@ interface SocialLinkProps {
 const SocialLink: React.FC<SocialLinkProps> = ({ icon: Icon, url }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="bg-customPurple hover:bg-customPurpleLight w-16 h-16 rounded-full flex items-center justify-center">
+      <div className="bg-customPurple hover:bg-customPurpleLight w-16 h-16 rounded-full flex items-center justify-center hover:scale-125 transition-transform duration-300 ease-in-out">
         <Icon className="w-11 h-11 text-white text-xl" />
       </div>
     </a>
