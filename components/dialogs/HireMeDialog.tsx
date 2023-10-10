@@ -38,7 +38,7 @@ const HireMeDialog = ({ open, setHireMeDialogOpen }: HireMeDialogProps) => {
         <div className="w-96 mx-auto">
           <img src="./images/wendy.gif" alt="GIF" className="mx-auto" />
         </div>
-        <div className="flex text-2xl text-customPurpleLight justify-between px-20 py-5">
+        <div className="text-2xl text-customPurpleLight py-5">
           <a
             href="https://wa.me/573044278880"
             target="_blank"
@@ -49,13 +49,6 @@ const HireMeDialog = ({ open, setHireMeDialogOpen }: HireMeDialogProps) => {
               <span className="pl-2">Siiii, hablemos</span>
             </span>
           </a>
-          <button
-            onClickCapture={() => {
-              setHireMeDialogOpen(false);
-            }}
-          >
-            <span>Cancelar</span>
-          </button>
         </div>
       </DialogContent>
     </Dialog>
