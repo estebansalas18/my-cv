@@ -5,7 +5,7 @@ interface SidebarRightProps {
   links: { url: string; icon: React.ElementType }[];
 }
 
-const SidebarRight: React.FC<SidebarRightProps> = ({ links }) => {
+const SidebarRight = ({ links }: SidebarRightProps) => {
   return (
     <div className="h-screen fixed right-0 w-1/12 bg-white">
       <div className="mt-24">

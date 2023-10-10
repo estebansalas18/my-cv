@@ -28,7 +28,7 @@ interface MainContentProps {
   }[];
 }
 
-const MainContent: React.FC<MainContentProps> = ({
+const MainContent = ({
   name,
   role,
   profileDescription,
@@ -38,7 +38,7 @@ const MainContent: React.FC<MainContentProps> = ({
   educationInfo,
   projectsDescription,
   projects,
-}) => {
+}: MainContentProps) => {
   const chunkArray = (array: any[], chunkSize: number) => {
     const groups = [];
     for (let i = 0; i < array.length; i += chunkSize) {

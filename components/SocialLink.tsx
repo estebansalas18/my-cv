@@ -5,7 +5,7 @@ interface SocialLinkProps {
   icon: React.ElementType;
 }
 
-const SocialLink: React.FC<SocialLinkProps> = ({ icon: Icon, url }) => {
+const SocialLink = ({ icon: Icon, url }: SocialLinkProps) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <div className="bg-customPurple hover:bg-customPurpleLight w-16 h-16 rounded-full flex items-center justify-center hover:scale-125 transition-transform duration-300 ease-in-out">

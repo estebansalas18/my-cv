@@ -15,7 +15,7 @@ interface SidebarLeftProps {
   skills: { label: string }[];
 }
 
-const SidebarLeft: React.FC<SidebarLeftProps> = ({
+const SidebarLeft = ({
   name,
   role,
   age,
@@ -25,7 +25,7 @@ const SidebarLeft: React.FC<SidebarLeftProps> = ({
   languages,
   programming,
   skills,
-}) => {
+}: SidebarLeftProps) => {
   return (
     <div className="h-screen fixed top-0 p-4 w-1/4 bg-white">
       <div className="w-48 h-48 rounded-full overflow-hidden mx-auto mt-1">

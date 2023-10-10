@@ -6,11 +6,7 @@ interface KnowledgeProps {
   description: string;
 }
 
-const Knowledge: React.FC<KnowledgeProps> = ({
-  icon: Icon,
-  title,
-  description,
-}) => {
+const Knowledge = ({ icon: Icon, title, description }: KnowledgeProps) => {
   return (
     <div className="bg-white rounded-lg shadow-lg p-4 text-center hover:scale-105 transition-transform duration-300 ease-in-out">
       <Icon className="text-8xl text-customPurple mb-2 mx-auto" />

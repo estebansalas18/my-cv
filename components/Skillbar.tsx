@@ -6,7 +6,7 @@ interface SkillBarProps {
   color?: string;
 }
 
-const SkillBar: React.FC<SkillBarProps> = ({ label, level, color }) => {
+const SkillBar = ({ label, level, color }: SkillBarProps) => {
   const barStyle: React.CSSProperties = {
     width: `${level}%`,
     backgroundColor: color || "#6a0dad",

@@ -7,7 +7,7 @@ interface InfoItemProps {
   color?: string;
 }
 
-const InfoItem: React.FC<InfoItemProps> = ({ index, label, value }) => {
+const InfoItem = ({ index, label, value }: InfoItemProps) => {
   return (
     <div className="flex justify-between items-center">
       <span className={index === "edu" ? "text-lg" : ""}>{label}</span>

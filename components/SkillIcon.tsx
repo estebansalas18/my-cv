@@ -5,7 +5,7 @@ interface SkillBadgeProps {
   label: string;
 }
 
-const SkillBadge: React.FC<SkillBadgeProps> = ({ label }) => {
+const SkillBadge = ({ label }: SkillBadgeProps) => {
   return (
     <div className="flex items-center">
       <MdStarOutline size={24} color="#6a0dad" />

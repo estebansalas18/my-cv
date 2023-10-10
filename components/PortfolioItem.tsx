@@ -8,12 +8,12 @@ interface PortfolioItemProps {
   url: string;
 }
 
-const PortfolioItem: React.FC<PortfolioItemProps> = ({
+const PortfolioItem = ({
   title,
   description,
   image,
   url,
-}) => {
+}: PortfolioItemProps) => {
   return (
     <div className="bg-white rounded-lg w-96 shadow-lg">
       <div className="mb-4">
