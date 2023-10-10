@@ -3,9 +3,9 @@ import { TransitionProps } from "@mui/material/transitions";
 import { Dispatch, SetStateAction, forwardRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
-interface ContactMeDialogProps {
+interface HireMeDialogProps {
   open: boolean;
-  setContactMeDialogOpen: Dispatch<SetStateAction<boolean>>;
+  setHireMeDialogOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 const Transition = forwardRef(function Transition(
@@ -17,22 +17,22 @@ const Transition = forwardRef(function Transition(
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
-const ContactMeDialog = ({
-  open,
-  setContactMeDialogOpen,
-}: ContactMeDialogProps) => {
+const HireMeDialog = ({ open, setHireMeDialogOpen }: HireMeDialogProps) => {
   return (
     <Dialog
       TransitionComponent={Transition}
       open={open}
       onClose={(event, reason) => {
         if (reason == "backdropClick") {
-          setContactMeDialogOpen(false);
+          setHireMeDialogOpen(false);
         }
       }}
     >
-      <DialogTitle className="text-center font-bold text-5xl">
-        ¿En serio me quieres contactar?
+      <DialogTitle
+        className="text-center"
+        style={{ fontWeight: "bold", fontSize: "3rem", lineHeight: "1" }}
+      >
+        ¿En serio me quieres contratar?
       </DialogTitle>
       <DialogContent>
         <div className="w-96 mx-auto">
@@ -51,7 +51,7 @@ const ContactMeDialog = ({
           </a>
           <button
             onClickCapture={() => {
-              setContactMeDialogOpen(false);
+              setHireMeDialogOpen(false);
             }}
           >
             <span>Cancelar</span>
@@ -62,4 +62,4 @@ const ContactMeDialog = ({
   );
 };
 
-export default ContactMeDialog;
+export default HireMeDialog;

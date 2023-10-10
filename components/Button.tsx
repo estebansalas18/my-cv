@@ -1,5 +1,5 @@
 import React from "react";
-import ContactMeDialog from "./dialogs/ContactMeDialog";
+import HireMeDialog from "./dialogs/HireMeDialog";
 import { FaArrowRight } from "react-icons/fa";
 import { useState } from "react";
 
@@ -8,21 +8,20 @@ interface ButtonProps {
 }
 
 const Button = ({ label }: ButtonProps) => {
-  const [ContactMeDialogOpen, setContactMeDialogOpen] =
-    useState<boolean>(false);
+  const [HireMeDialogOpen, setHireMeDialogOpen] = useState<boolean>(false);
 
-  const handleContactMeClick = () => {
-    setContactMeDialogOpen(true);
+  const handleHireMeClick = () => {
+    setHireMeDialogOpen(true);
   };
 
   return (
     <button
       className="relative bg-customPurple mt-6 hover:bg-customPurpleLight text-white font-thin h-14 w-56 rounded text-2xl focus:outline-none focus:shadow-outline hover:scale-105 transition-transform duration-300 ease-in-out"
-      onClickCapture={handleContactMeClick}
+      onClickCapture={handleHireMeClick}
     >
-      <ContactMeDialog
-        open={ContactMeDialogOpen}
-        setContactMeDialogOpen={setContactMeDialogOpen}
+      <HireMeDialog
+        open={HireMeDialogOpen}
+        setHireMeDialogOpen={setHireMeDialogOpen}
       />
       <div className="flex items-center justify-center">
         {label}

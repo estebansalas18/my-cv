@@ -1,7 +1,7 @@
 import { Dialog, DialogContent, DialogTitle, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import { Dispatch, SetStateAction, forwardRef } from "react";
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 interface AhorrAppDialogProps {
   open: boolean;
@@ -31,7 +31,10 @@ const AhorrAppDialog = ({
         }
       }}
     >
-      <DialogTitle className="font-bold text-6xl text-customPurple text-center">
+      <DialogTitle
+        className="text-customPurple text-center"
+        style={{ fontWeight: "bold", fontSize: "3.75rem", lineHeight: "1" }}
+      >
         AhorrApp
       </DialogTitle>
       <DialogContent>

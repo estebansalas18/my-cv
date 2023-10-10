@@ -24,7 +24,7 @@ const Home = () => {
     email: "JuanesSalas18@gmail.com",
     nationality: "Colombiano",
     profileDescription:
-      "Arquitecto Nube en Bancolombia, enfocado en la nube de AWS. Gran capacidad de trabajo de equipo y plenos conocimientos en Frontend. Con intereses en el desarrollo Web y Móvil.",
+      "Arquitecto Nube en Bancolombia, enfocado en la nube de AWS. Gran capacidad de trabajo en equipo y plenos conocimientos en Frontend. Con intereses en el desarrollo Web y Móvil.",
     languages: [
       { label: "Español", level: 100 },
       { label: "Inglés", level: 80 },
@@ -39,7 +39,7 @@ const Home = () => {
     skills: [
       { label: "Arquitectura de Software" },
       { label: "Patrones de diseño" },
-      { label: "Infraestructura Nube" },
+      { label: "Infraestructura en la Nube" },
       { label: "Aplicaciones Móviles" },
     ],
     links: [
@@ -58,7 +58,7 @@ const Home = () => {
       { url: "https://github.com/estebansalas18", icon: FaGithub },
     ],
     knowledgeDescription:
-      "Mis conocimientos se resumen en fundamentos básicos de Cloud Computing, enfocado en la nube de AWS y adquiriendo nuevos conocimientos de Azure y GCP, también he trabajado con metodologías agiles como Scrum y habilidades escenciales en Git y Github.",
+      "Mis conocimientos se resumen en fundamentos básicos de Cloud Computing, enfocados en la nube de AWS y adquiriendo nuevos conocimientos de Azure y GCP. También he trabajado con metodologías ágiles como Scrum y habilidades esenciales en Git y Github.",
     knowledge: [
       {
         icon: FaAws,
@@ -94,7 +94,7 @@ const Home = () => {
       },
     ],
     educationDescription:
-      "Mi educación se comprende en cursos de fundamentos de programación con enfasis en el desarrollo de aplicaciones móviles y web, también he adquirido conocimientos en la nube de AWS y completado la primera certificación y actualmente me encuentro terminando mi pregrado en Ingeniería de Sistemas.",
+      "Mi educación se comprende en cursos de fundamentos de programación con énfasis en el desarrollo de aplicaciones móviles y web. También he adquirido conocimientos en la nube de AWS y completado la primera certificación, y actualmente me encuentro terminando mi pregrado en Ingeniería de Sistemas.",
     educationInfo: [
       {
         institution: "Universidad de Antioquia",
@@ -125,7 +125,7 @@ const Home = () => {
       },
     ],
     projectsDescription:
-      "Mi portafolio cuenta con todos los proyectos que he realizado a traves de mi vida Universitaria, en los cuales he adquirido conocimientos en diferentes lenguajes de programación y metodologías de desarrollo.",
+      "Mi portafolio cuenta con todos los proyectos que he realizado a lo largo de mi vida universitaria, en los cuales he adquirido conocimientos en diferentes lenguajes de programación y metodologías de desarrollo.",
     projects: [
       {
         image: "./images/ahorrapp.jpg",
@@ -136,8 +136,8 @@ const Home = () => {
       },
       {
         image: "./images/domino.jpg",
-        title: "Domino",
-        description: "Juego de domino desarrollado en C#",
+        title: "Dominó",
+        description: "Juego de dominó desarrollado en C#",
         url: "https://github.com/estebansalas18/Domino-lab1",
       },
       {
