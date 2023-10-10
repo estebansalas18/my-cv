@@ -15,7 +15,7 @@ import { SiAzuredevops } from "react-icons/si";
 import { BiLogoFlutter } from "react-icons/bi";
 import { DiScrum } from "react-icons/di";
 
-const Home: React.FC = () => {
+const Home = () => {
   const personalInfo = {
     name: "Juan Esteban Salas Flórez",
     role: "Arquitecto Nube",
