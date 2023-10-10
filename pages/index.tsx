@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import SidebarLeft from "../components/SidebarLeft";
 import MainContent from "../components/Maincontent";
@@ -132,7 +132,7 @@ const Home = () => {
         title: "AhorrApp",
         description:
           "AhorrApp es una aplicación para comprar más y gastar menos.",
-        url: "https://github.com/cbasguti/ahorra_app",
+        dialog: "AhorrAppDialog",
       },
       {
         image: "./images/domino.jpg",

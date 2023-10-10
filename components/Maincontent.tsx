@@ -24,7 +24,8 @@ interface MainContentProps {
     title: string;
     description: string;
     image: string;
-    url: string;
+    url?: string;
+    dialog?: string;
   }[];
 }
 
@@ -114,6 +115,7 @@ const MainContent = ({
                 description={project.description}
                 image={project.image}
                 url={project.url}
+                dialog={project.dialog}
               />
             ))}
           </div>
